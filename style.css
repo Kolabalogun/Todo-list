@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    background-image: url('pexels-ann-h-1989820.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+header,
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 50px;
+}
+
+form input,
+form button {
+    border: none;
+    background: white;
+    padding: .8rem;
+}
+
+form input {
+    font-size: .9rem;
+    margin: 5px;
+    width: 40%;
+    
+}
+
+form button,
+.btt {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: #282C34;
+    font-weight: bold;
+}
+
+form button:hover {
+    color: black;
+    background-color: white;
+}
+
+.todos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos-ul {
+    width: 50%;
+}
+
+.a {
+    display: flex;
+    justify-content: space-between;
+    background-color: #21252B;
+    margin: 5px;
+    border-radius: 5px;
+    transition: 1s ease;
+}
+
+.lii {
+    padding: 10px;
+    font-size: 18px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.para {
+    font-family: cursive;
+    font-size: 9px;
+    margin-top: 10px;
+}
+
+.complete {
+    cursor: pointer;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: rgb(6, 255, 47);
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+.undo {
+    cursor: pointer;
+    /* margin-left: 5px; */
+    padding: 10px;
+    background-color: rgb(15, 86, 219);
+    border: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255)
+}
+
+
+
+.delete {
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(155, 10, 10);
+    border: none;
+    font-size: 16px;
+    color: white;
+}
+
+.fa-trash-alt,
+.fa-check-circle,
+.fa-undo {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.8;
+}
+
+.un-donee {
+    text-decoration: solid;
+    opacity: 1;
+}
+
+.fall {
+    transform: translateY(17rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+@media screen and (max-width: 879px) {
+    .todos-ul {
+    width: 90%;
+}
+
+form input {
+    width: 70%;
+    
+}
+}
